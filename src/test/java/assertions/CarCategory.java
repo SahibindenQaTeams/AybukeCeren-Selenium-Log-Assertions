@@ -292,4 +292,11 @@ public class CarCategory {
         }
 
     }
+    
+    @AfterEach
+    public void afterTest(){
+
+        driver.close();
+        driver.quit();
+    }
 }
